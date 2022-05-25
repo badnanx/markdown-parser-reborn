@@ -22,45 +22,7 @@ public class MarkdownParseTest {
 
     @Test 
     public void testFile() throws IOException{
-        //     List<String> expected = Arrays.asList("https://something.com", "some-thing.html"); 
         
-        //     // creating path
-        //     Path fileName
-        //     = Paths.get("test-file.md");
-
-        //     System.out.println(fileName.toAbsolutePath());
-
-        //     System.out.println(fileName);
-        //     //System.out.println(folder);
-        // try
-  
-        // {
-        //     // reading file from given path
-        //     String content = Files.readString(fileName);
-        //     // printing the content
-        //     System.out.println(content);
-            
-        //     ArrayList<String> links = MarkdownParse.getLinks(content);
-        //     assertEquals(expected, links);
-        // }
-        // catch (IOException e) {
-        //     e.printStackTrace();
-        // }
-
-        // l
-        // System.out.println("mars");
-        // Path pathes = Path.of("test-file.md");
-        // System.out.println("hello");
-        // System.out.println(pathes);
-        // String contents = Files.readString(pathes);
-
-        
-        // List<String> expected = List.of("https://something.com", "some-page.html");
-        // List<String> actual = MarkdownParse.getLinks(contents);
-
-        // assertEquals(expected, actual);
-
-        //d
         Path fileName = Path.of("C:/Users/16199/Desktop/markdown-parse-copy/test-file.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
