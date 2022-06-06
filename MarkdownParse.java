@@ -17,7 +17,9 @@ public class MarkdownParse {
             int openParen = markdown.indexOf("(", closeBracket);
             int closeParen = markdown.indexOf(")", openParen);
 
-            // ******************************
+           
+
+            
 
 
             // changed so it now fixes error from test-file2, not just test-file1 and test-file3
@@ -28,11 +30,37 @@ public class MarkdownParse {
                 isImage = true; 
 
             }
+
+
+
+
+            // *************************************************
+
+            // insert code 22.md fix here
+
+            // **************************************************
+
+
+            // **************************************************
+
+            // insert code 41.md fix here
+
+            // *************************************************
             
+           
+
             if ((openBracket == -1 || openParen == -1 || closeParen == -1 || closeBracket == -1)){
                 currentIndex = markdown.length(); 
             } else if (isImage) {
                 currentIndex = closeParen + 1;
+
+            // ***** insert an 'else if' for 22.md fix here  *****
+                // Example: else if (invalidFirstChar) { currentIndex = closenParen + 1; }
+                
+                
+            // ***** insert an 'else if' for 41.md fix here  *****
+                // Example: else if (whiteSpace) { currentIndex = closenParen + 1; }
+
             } else {
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
                 currentIndex = closeParen + 1;
